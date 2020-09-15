@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/makannew/tensorflow-js-practice/static/css/main.5f361e03.chunk.css",
+    "main.js": "/makannew/tensorflow-js-practice/static/js/main.33e16501.chunk.js",
+    "main.js.map": "/makannew/tensorflow-js-practice/static/js/main.33e16501.chunk.js.map",
+    "runtime-main.js": "/makannew/tensorflow-js-practice/static/js/runtime-main.7a6e1282.js",
+    "runtime-main.js.map": "/makannew/tensorflow-js-practice/static/js/runtime-main.7a6e1282.js.map",
+    "static/js/2.82bbc6a6.chunk.js": "/makannew/tensorflow-js-practice/static/js/2.82bbc6a6.chunk.js",
+    "static/js/2.82bbc6a6.chunk.js.map": "/makannew/tensorflow-js-practice/static/js/2.82bbc6a6.chunk.js.map",
+    "index.html": "/makannew/tensorflow-js-practice/index.html",
+    "precache-manifest.f1c1f6120a7a312708e356bf33a9a06f.js": "/makannew/tensorflow-js-practice/precache-manifest.f1c1f6120a7a312708e356bf33a9a06f.js",
+    "service-worker.js": "/makannew/tensorflow-js-practice/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/makannew/tensorflow-js-practice/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.82bbc6a6.chunk.js.LICENSE.txt": "/makannew/tensorflow-js-practice/static/js/2.82bbc6a6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a6e1282.js",
+    "static/js/2.82bbc6a6.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.33e16501.chunk.js"
+  ]
+}
