@@ -3,7 +3,7 @@ import { useLinkedState } from "use-linked-state";
 import * as tfvis from "@tensorflow/tfjs-vis";
 
 export default function DataPlot({ dataGateway }) {
-  const [data, setData] = useLinkedState(dataGateway);
+  const [data] = useLinkedState(dataGateway);
   const visDiv = useRef();
   useEffect(() => {
     if (data != null) {

@@ -3,7 +3,7 @@ import useDelayedFunction from "use-delayed-function";
 import { useLinkedState } from "use-linked-state";
 const DATA_URL = "https://storage.googleapis.com/tfjs-tutorials/carsData.json";
 export default function LoadData({ dataGateway }) {
-  const [data, setData] = useLinkedState(dataGateway);
+  const [, setData] = useLinkedState(dataGateway);
   const [status, setStatus] = useState("loading...");
   const [delayedFetch, cancelDelayedFetch] = useDelayedFunction(fetchData);
 

@@ -4,7 +4,7 @@ import * as tfvis from "@tensorflow/tfjs-vis";
 import { useLinkedState } from "use-linked-state";
 
 export default function Model({ modelGateway }) {
-  const [model, setModel] = useLinkedState(modelGateway);
+  const [, setModel] = useLinkedState(modelGateway);
   const modelRef = useRef();
   useEffect(() => {
     const thisModel = tf.sequential();
