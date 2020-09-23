@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/tensorflow-js-practice/static/css/main.624eb193.chunk.css",
-    "main.js": "/tensorflow-js-practice/static/js/main.5a209f9c.chunk.js",
-    "main.js.map": "/tensorflow-js-practice/static/js/main.5a209f9c.chunk.js.map",
+    "main.js": "/tensorflow-js-practice/static/js/main.ed9f0682.chunk.js",
+    "main.js.map": "/tensorflow-js-practice/static/js/main.ed9f0682.chunk.js.map",
     "runtime-main.js": "/tensorflow-js-practice/static/js/runtime-main.29b03cc8.js",
     "runtime-main.js.map": "/tensorflow-js-practice/static/js/runtime-main.29b03cc8.js.map",
-    "static/js/2.18691a07.chunk.js": "/tensorflow-js-practice/static/js/2.18691a07.chunk.js",
-    "static/js/2.18691a07.chunk.js.map": "/tensorflow-js-practice/static/js/2.18691a07.chunk.js.map",
+    "static/js/2.2af1ebba.chunk.js": "/tensorflow-js-practice/static/js/2.2af1ebba.chunk.js",
+    "static/js/2.2af1ebba.chunk.js.map": "/tensorflow-js-practice/static/js/2.2af1ebba.chunk.js.map",
     "index.html": "/tensorflow-js-practice/index.html",
-    "precache-manifest.2fbf8e3dd5be7c3e7c7e063608caa2b0.js": "/tensorflow-js-practice/precache-manifest.2fbf8e3dd5be7c3e7c7e063608caa2b0.js",
+    "precache-manifest.5cbd41faed91dc9e8b3610a8d30f265f.js": "/tensorflow-js-practice/precache-manifest.5cbd41faed91dc9e8b3610a8d30f265f.js",
     "service-worker.js": "/tensorflow-js-practice/service-worker.js",
     "static/css/main.624eb193.chunk.css.map": "/tensorflow-js-practice/static/css/main.624eb193.chunk.css.map",
-    "static/js/2.18691a07.chunk.js.LICENSE.txt": "/tensorflow-js-practice/static/js/2.18691a07.chunk.js.LICENSE.txt",
+    "static/js/2.2af1ebba.chunk.js.LICENSE.txt": "/tensorflow-js-practice/static/js/2.2af1ebba.chunk.js.LICENSE.txt",
     "static/media/github.png": "/tensorflow-js-practice/static/media/github.49e6c8b3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.29b03cc8.js",
-    "static/js/2.18691a07.chunk.js",
+    "static/js/2.2af1ebba.chunk.js",
     "static/css/main.624eb193.chunk.css",
-    "static/js/main.5a209f9c.chunk.js"
+    "static/js/main.ed9f0682.chunk.js"
   ]
 }
