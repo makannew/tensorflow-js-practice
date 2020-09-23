@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/tensorflow-js-practice/static/css/main.5f361e03.chunk.css",
-    "main.js": "/tensorflow-js-practice/static/js/main.c657c4be.chunk.js",
-    "main.js.map": "/tensorflow-js-practice/static/js/main.c657c4be.chunk.js.map",
+    "main.css": "/tensorflow-js-practice/static/css/main.9511765c.chunk.css",
+    "main.js": "/tensorflow-js-practice/static/js/main.5a209f9c.chunk.js",
+    "main.js.map": "/tensorflow-js-practice/static/js/main.5a209f9c.chunk.js.map",
     "runtime-main.js": "/tensorflow-js-practice/static/js/runtime-main.29b03cc8.js",
     "runtime-main.js.map": "/tensorflow-js-practice/static/js/runtime-main.29b03cc8.js.map",
-    "static/js/2.82bbc6a6.chunk.js": "/tensorflow-js-practice/static/js/2.82bbc6a6.chunk.js",
-    "static/js/2.82bbc6a6.chunk.js.map": "/tensorflow-js-practice/static/js/2.82bbc6a6.chunk.js.map",
+    "static/js/2.18691a07.chunk.js": "/tensorflow-js-practice/static/js/2.18691a07.chunk.js",
+    "static/js/2.18691a07.chunk.js.map": "/tensorflow-js-practice/static/js/2.18691a07.chunk.js.map",
     "index.html": "/tensorflow-js-practice/index.html",
-    "precache-manifest.06318bde3276d27975a1ff48ce0e45d6.js": "/tensorflow-js-practice/precache-manifest.06318bde3276d27975a1ff48ce0e45d6.js",
+    "precache-manifest.5f2d994aee5a79a0c72b62172237e219.js": "/tensorflow-js-practice/precache-manifest.5f2d994aee5a79a0c72b62172237e219.js",
     "service-worker.js": "/tensorflow-js-practice/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/tensorflow-js-practice/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.82bbc6a6.chunk.js.LICENSE.txt": "/tensorflow-js-practice/static/js/2.82bbc6a6.chunk.js.LICENSE.txt"
+    "static/css/main.9511765c.chunk.css.map": "/tensorflow-js-practice/static/css/main.9511765c.chunk.css.map",
+    "static/js/2.18691a07.chunk.js.LICENSE.txt": "/tensorflow-js-practice/static/js/2.18691a07.chunk.js.LICENSE.txt",
+    "static/media/github.png": "/tensorflow-js-practice/static/media/github.49e6c8b3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.29b03cc8.js",
-    "static/js/2.82bbc6a6.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.c657c4be.chunk.js"
+    "static/js/2.18691a07.chunk.js",
+    "static/css/main.9511765c.chunk.css",
+    "static/js/main.5a209f9c.chunk.js"
   ]
 }
