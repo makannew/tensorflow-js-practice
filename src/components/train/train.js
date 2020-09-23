@@ -1,31 +1,49 @@
 import React, { useRef, useState } from "react";
 import { useLinkedState } from "use-linked-state";
+import useDelayedFunction from "use-delayed-function";
 import * as tf from "@tensorflow/tfjs";
 import * as tfvis from "@tensorflow/tfjs-vis";
+import style from "./train.module.css";
 
-export default function Train({ tensorsGateway, modelGateway }) {
+export default function Train({
+  tensorsGateway,
+  modelGateway,
+  refreshGateway,
+}) {
+  const [refresh] = useLinkedState(refreshGateway);
   const [model] = useLinkedState(modelGateway);
   const [tensors] = useLinkedState(tensorsGateway);
   const [batchSize, setBatchSize] = useState(32);
   const [epochs, setEpochs] = useState(20);
+  const [training, setTraining] = useState(false);
+  const [delayedTrain] = useDelayedFunction(train);
+
   const trainRef = useRef();
-  const startTrain = async () => {
+
+  const startTrain = () => {
+    if (training) return;
+    setTraining(true);
+    delayedTrain().then(() => {
+      setTraining(false);
+    });
+  };
+  function train() {
     if (!model || !tensors) return;
     model.compile({
       optimizer: tf.train.adam(),
       loss: tf.losses.meanSquaredError,
       metrics: ["mse"],
     });
-    return await model.fit(tensors.inputs, tensors.labels, {
+    return model.fit(tensors.inputs, tensors.labels, {
       batchSize,
       epochs,
       shuffle: true,
-      callbacks: tfvis.show.fitCallbacks(trainRef.current, ["loss", "mse"], {
+      callbacks: tfvis.show.fitCallbacks(trainRef.current, ["mse"], {
         height: 200,
         callbacks: ["onEpochEnd"],
       }),
     });
-  };
+  }
 
   function handleChange(e) {
     switch (e.target.name) {
@@ -40,9 +58,8 @@ export default function Train({ tensorsGateway, modelGateway }) {
     }
   }
   return (
-    <div>
-      <div>
-        <button onClick={startTrain}>Click to train!</button>
+    <div className={style["container"]}>
+      <div className={style["controls"]}>
         <label htmlFor="epochs">{`Epochs: ${epochs}`}</label>
         <input
           type="range"
@@ -64,9 +81,12 @@ export default function Train({ tensorsGateway, modelGateway }) {
           step="1"
           onChange={handleChange}
         />
+        <button className="btn" onClick={startTrain}>
+          {training ? "Training in progress..." : "Click to train!"}
+        </button>
       </div>
 
-      <div ref={trainRef}></div>
+      <div className={style["graph"]} ref={trainRef}></div>
     </div>
   );
 }

@@ -1,0 +1,39 @@
+.container {
+  background-color: var(--second-color);
+  margin: 30px auto 20px auto;
+}
+
+.container > button {
+  margin: 25px auto;
+  padding: 7px 14px;
+}
+
+.container > div > div {
+  margin: 7px auto;
+}
+
+.container > div button {
+  padding: 3px 6px;
+  background-color: var(--third-color);
+  margin-left: 30px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.item {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+}
+
+.item input {
+  margin: 0px 17px 0px 40px;
+}
+
+.item label {
+  margin-left: 10px;
+}

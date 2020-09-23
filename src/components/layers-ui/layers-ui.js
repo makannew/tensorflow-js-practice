@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./layers-ui.module.css";
 
 export default function LayersUI({ layers, updateFunc, ACTIVATION }) {
   function addLayer() {
@@ -47,13 +48,19 @@ export default function LayersUI({ layers, updateFunc, ACTIVATION }) {
   };
 
   return (
-    <div>
+    <div className={style["container"]}>
       <div>
+        <div className={style["table-header"]}>
+          <span>Layer</span>
+          <span>Units</span>
+          <span>Activation</span>
+          <span>Action</span>
+        </div>
         {layers.map((item) => {
           return (
-            <div key={item.layerNo}>
-              <label>{`Layer no: ${item.layerNo}`}</label>
-              <label name={`u-${item.layerNo}`}>{`Units: `}</label>
+            <div className={style["item"]} key={item.layerNo}>
+              <label>{item.layerNo}</label>
+              {/* <label name={`u-${item.layerNo}`}>{`Units: `}</label> */}
               <input
                 name={`u-${item.layerNo}`}
                 type="number"
@@ -62,7 +69,7 @@ export default function LayersUI({ layers, updateFunc, ACTIVATION }) {
                 value={item.units}
                 onChange={handleChange}
               />
-              <label htmlFor={`a-${item.layerNo}`}>{`Activation: `}</label>
+              {/* <label htmlFor={`a-${item.layerNo}`}>{`Activation: `}</label> */}
               <select
                 name={`a-${item.layerNo}`}
                 onChange={handleChange}
@@ -75,7 +82,11 @@ export default function LayersUI({ layers, updateFunc, ACTIVATION }) {
                 ))}
               </select>
               {layers.length !== 1 ? (
-                <button onClick={removeLayer} value={item.layerNo}>
+                <button
+                  className="btn"
+                  onClick={removeLayer}
+                  value={item.layerNo}
+                >
                   Delete
                 </button>
               ) : null}
@@ -83,7 +94,9 @@ export default function LayersUI({ layers, updateFunc, ACTIVATION }) {
           );
         })}
       </div>
-      <button onClick={addLayer}>Add new layer</button>
+      <button className="btn" onClick={addLayer}>
+        Add new layer
+      </button>
     </div>
   );
 }

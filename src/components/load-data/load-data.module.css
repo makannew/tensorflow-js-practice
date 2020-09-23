@@ -1,0 +1,11 @@
+.load-data {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-data button {
+  margin-top: 25px;
+  padding: 7px 14px;
+}

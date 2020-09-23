@@ -1,0 +1,23 @@
+.container {
+  min-height: 300px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls input {
+  width: 200px;
+  margin: 5px auto 25px auto;
+}
+
+.controls button {
+  padding: 5px 10px;
+  width: 150px;
+}
+
+.graph {
+  margin: 20px 30px;
+}

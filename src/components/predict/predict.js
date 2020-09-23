@@ -2,8 +2,15 @@ import React, { useRef } from "react";
 import { useLinkedState } from "use-linked-state";
 import * as tf from "@tensorflow/tfjs";
 import * as tfvis from "@tensorflow/tfjs-vis";
+import style from "./predict.module.css";
 
-export default function Predict({ modelGateway, tensorsGateway, dataGateway }) {
+export default function Predict({
+  modelGateway,
+  tensorsGateway,
+  dataGateway,
+  refreshGateway,
+}) {
+  const [refresh] = useLinkedState(refreshGateway);
   const [model] = useLinkedState(modelGateway);
   const [tensors] = useLinkedState(tensorsGateway);
   const [data] = useLinkedState(dataGateway);
@@ -44,9 +51,11 @@ export default function Predict({ modelGateway, tensorsGateway, dataGateway }) {
   }
 
   return (
-    <div>
-      <div ref={resultRef}></div>
-      <button onClick={doPrediction}>Do prediction</button>
+    <div className={style["container"]}>
+      <button className="btn" onClick={doPrediction}>
+        Do prediction
+      </button>
+      <div className={style["graph"]} ref={resultRef}></div>
     </div>
   );
 }

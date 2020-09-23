@@ -1,0 +1,20 @@
+.container {
+  background-color: var(--forth-color);
+  color: var(--white-color);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container h6 {
+  margin-bottom: 10px;
+}
+.container a {
+  color: var(--white-color);
+}
+
+.container img {
+  width: 32px;
+  height: 32px;
+}

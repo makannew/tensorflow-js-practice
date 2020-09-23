@@ -3,13 +3,15 @@ import * as tf from "@tensorflow/tfjs";
 import * as tfvis from "@tensorflow/tfjs-vis";
 import { useLinkedState } from "use-linked-state";
 import LayersUI from "../layers-ui/layers-ui";
+import style from "./model.module.css";
 
 const ACTIVATION = ["relu", "sigmoid", "tanh", "softmax", "linear"];
-export default function Model({ modelGateway }) {
+export default function Model({ modelGateway, refreshGateway }) {
+  const [refresh] = useLinkedState(refreshGateway);
   const [model, setModel] = useLinkedState(modelGateway);
   const [layers, setLayers] = useState([
     { layerNo: 1, units: 50, activation: ACTIVATION[0] },
-    { layerNo: 2, units: 50, activation: ACTIVATION[3] },
+    { layerNo: 2, units: 50, activation: ACTIVATION[0] },
     { layerNo: 3, units: 50, activation: ACTIVATION[0] },
     { layerNo: 4, units: 50, activation: ACTIVATION[0] },
   ]);
@@ -39,13 +41,13 @@ export default function Model({ modelGateway }) {
     }
   }, [model]);
   return (
-    <div>
+    <div className={style["container"]}>
       <LayersUI
         layers={layers}
         updateFunc={setLayers}
         ACTIVATION={ACTIVATION}
       />
-      <div ref={modelRef}></div>
+      <div className={style["model"]} ref={modelRef}></div>
     </div>
   );
 }

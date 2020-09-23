@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import useDelayedFunction from "use-delayed-function";
 import { useLinkedState } from "use-linked-state";
+import style from "./load-data.module.css";
 const DATA_URL = "https://storage.googleapis.com/tfjs-tutorials/carsData.json";
+
 export default function LoadData({ dataGateway }) {
   const [, setData] = useLinkedState(dataGateway);
   const [status, setStatus] = useState("loading...");
@@ -37,5 +39,11 @@ export default function LoadData({ dataGateway }) {
       cancelDelayedFetch();
     };
   }, []);
-  return <div onClick={loadData}>{status}</div>;
+  return (
+    <div className={style["load-data"]}>
+      <button className="btn" onClick={loadData}>
+        {status}
+      </button>
+    </div>
+  );
 }
