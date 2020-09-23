@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a50154bed83bfd5c1bf5d14ead8e369",
+    "revision": "f8e961238116d00886aef184e90b42fd",
     "url": "/tensorflow-js-practice/index.html"
   },
   {
-    "revision": "152bf989615208d6ed41",
-    "url": "/tensorflow-js-practice/static/css/main.9511765c.chunk.css"
+    "revision": "453f14b9a71ac8c1b57c",
+    "url": "/tensorflow-js-practice/static/css/main.624eb193.chunk.css"
   },
   {
     "revision": "ca8a31068b2dbdf42284",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tensorflow-js-practice/static/js/2.18691a07.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "152bf989615208d6ed41",
+    "revision": "453f14b9a71ac8c1b57c",
     "url": "/tensorflow-js-practice/static/js/main.5a209f9c.chunk.js"
   },
   {
