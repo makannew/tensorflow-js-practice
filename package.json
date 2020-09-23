@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@tensorflow/tfjs": "^2.3.0",
-    "@tensorflow/tfjs-layers": "^2.3.0",
+    "@tensorflow/tfjs": "^2.4.0",
+    "@tensorflow/tfjs-layers": "^2.4.0",
     "@tensorflow/tfjs-vis": "^1.4.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -13,6 +13,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "typescript": "^4.0.3",
     "use-delayed-function": "^1.0.0",
     "use-linked-state": "^1.1.2"
   },
