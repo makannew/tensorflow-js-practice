@@ -42,6 +42,7 @@ export default function Model({ modelGateway, refreshGateway }) {
   }, [model]);
   return (
     <div className={style["container"]}>
+      <h2>Model Topology</h2>
       <LayersUI
         layers={layers}
         updateFunc={setLayers}
